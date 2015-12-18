@@ -1,0 +1,15 @@
+{
+    "update" : {
+		"fixVersions": [
+			{
+				"set": [
+					{
+						"name": ""
+					}
+				]
+			}
+		],
+		"labels": [
+		]
+	}
+}

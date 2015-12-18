@@ -1,0 +1,785 @@
+{
+	"project": "ICC",
+	"story": {
+		"key": null,
+		"summary": "TEST STORY",
+		"description": "TEST DESCRIPTION",
+		"labels": [ "_{STORY_KEY}_TEST_DESCRIPTION" ],
+		"epiclinkid": "ICC-375",
+		"fixversion": "RACQ 16.3",
+		"tasks": { 
+			"linktypetostory": "",
+			"issues": [
+				{
+					"summary": "Ready - Requirements and design",
+					"description": 
+						[ 
+							"As per http://wiki/Confluence/display/tech/Definitions+of+Project+and+Iteration+Stages",
+							"Intent", 
+							"* To create a common understanding within the team of the requirements and design of the service in preparation for coding, test case writing, and support activities (construction ready)", 
+							"* To validate the team understanding of the designed integration solution with the external parties involved and provide a final quality gate/opportunity to review and agree on the solution", 
+							"* To ensure that the ICC has received all the pre-requisites from the business", 
+							"* To communicate to other dependent parties what will be constructed and what their responsibility will be for supporting the solution when it is in production", 
+							"", 
+							"Responsible", 
+							"* Analyst (Primary)", 
+							"* Developer", 
+							"", 
+							"Reviewers", 
+							"* Solution Architect", 
+							"* Integration Technical Architect"
+						],
+					"subtasks": [
+						{
+							"summary": "Overview",
+							"description": 
+								[
+									"* Summary", 
+									"* Requirements", 
+									"* High-level acceptance criteria", 
+									"* Review business process models, including business event triggers", 
+									"", 
+									"Responsible", 
+									"* Analyst (Primary)", 
+									"* Developer", 
+									"* Tester", 
+									"", 
+									"Reviewers", 
+									"* Solution Architect", 
+									"* Integration Technical Architect"
+								]
+						},
+						{
+							"summary": "Technical Architecture",
+							"description": 
+								[
+									"* Identification of channel adapters, business services, business events, and other participating systems", 
+									"* High-level diagram(s) - such as a conceptual Interaction diagram, services overview diagram, message flow diagram (Optional)", 
+									"* Integration layer logical data model and required contracts", 
+									"* Integration services overview including namespace definition, service groupings and operation names", 
+									"", 
+									"Responsible", 
+									"* Analyst (Primary)", 
+									"* Developer", 
+									"", 
+									"Reviewers", 
+									"* Solution Architect", 
+									"* Integration Technical Architect"
+								]
+						},
+						{
+							"summary": "Design",
+							"description": 
+								[
+									"* Low-level diagram(s) - such as component and sequence diagrams", 
+									"* Orchestration design", 
+									"* Integration message flow", 
+									"* Common components i.e. helper class/utilities/error handlers)", 
+									"", 
+									"Responsible", 
+									"* Analyst (Primary)", 
+									"* Developer", 
+									"", 
+									"Reviewers", 
+									"* Solution Architect", 
+									"* Integration Technical Architect"
+								]
+						},
+						{
+							"summary": "Production support considerations",
+							"description": 
+								[
+									"* Error handling (including fault codes)", 
+									"* Identify appropriate business activities - for business activity monitoring (BAM) & event log", 
+									"* Identify the required business and technical production support email groups", 
+									"* Identify the production error email alert rules (to be configured in FireScope)", 
+									"* Identify the error handling approach for each component, and thus any production support procedures that may be required", 
+									"", 
+									"Responsible", 
+									"* Analyst (Primary)", 
+									"* Developer", 
+									"", 
+									"Reviewers", 
+									"* Solution Architect", 
+									"* Integration Technical Architect"
+								]
+						},
+						{
+							"summary": "Sequence Diagrams",
+							"description": 
+								[
+									"* Create sequence diagram via https://www.websequencediagrams.com/", 
+									"", 
+									"Responsible", 
+									"* Analyst (Primary)", 
+									"* Developer", 
+									"", 
+									"Reviewers", 
+									"* Solution Architect", 
+									"* Integration Technical Architect"
+								]
+						}
+					]
+				},
+				{
+					"summary": "Ready - Business rules and mappings",
+					"description": 
+						[
+							"As per http://wiki/Confluence/display/tech/Definitions+of+Project+and+Iteration+Stages", 
+							"", 
+							"Intent", 
+							"* To create a common understanding within the team of the requirements and design of the service in preparation for coding, test case writing, and support activities (construction ready)", 
+							"* To validate the team understanding of the designed integration solution with the external parties involved and provide a final quality gate/opportunity to review and agree on the solution", 
+							"* To ensure that the ICC has received all the pre-requisites from the business", 
+							"* To communicate to other dependent parties what will be constructed and what their responsibility will be for supporting the solution when it is in production", 
+							"", 
+							"Responsible", 
+							"* Analyst (Primary)", 
+							"", 
+							"Reviewers", 
+							"* Integration Technical Architect"
+						],
+					"subtasks": [
+						{
+							"summary": "Business rules documentation",
+							"description":
+								[
+									"* Business rules documentation", 
+									"", 
+									"Responsible", 
+									"* Analyst (Primary)", 
+									"", 
+									"Reviewers", 
+									"* Integration Technical Architect"
+								]
+						},
+						{
+							"summary": "Data mapping",
+							"description": 
+								[
+									"* Data mapping and transformation rules", 
+									"", 
+									"Responsible", 
+									"* Analyst (Primary)", 
+									"", 
+									"Reviewers", 
+									"* Integration Technical Architect"
+								]
+						},
+						{
+							"summary": "Non-functional considerations",
+							"description": 
+								[
+									"* Non-functional considerations - such as performance and volumetrics updated on the wiki", 
+									"", 
+									"Responsible", 
+									"* Analyst (Primary)", 
+									"", 
+									"Reviewers", 
+									"* Integration Technical Architect"
+								]
+						}
+					]
+				},
+				{
+					"summary": "Ready - Contracts",
+					"description": 
+						[
+							"As per http://wiki/Confluence/display/tech/Definitions+of+Project+and+Iteration+Stages", 
+							"", 
+							"Intent", 
+							"* To create a common understanding within the team of the requirements and design of the service in preparation for coding, test case writing, and support activities (construction ready)", 
+							"* To validate the team understanding of the designed integration solution with the external parties involved and provide a final quality gate/opportunity to review and agree on the solution", 
+							"* To ensure that the ICC has received all the pre-requisites from the business", 
+							"* To communicate to other dependent parties what will be constructed and what their responsibility will be for supporting the solution when it is in production", 
+							"", 
+							"Responsible", 
+							"* Analyst (Primary)", 
+							"* Developer", 
+							"", 
+							"Reviewers", 
+							"* Solution Architect", 
+							"* Integration Technical Architect"
+						],
+					"subtasks": [
+						{
+							"summary": "Contracts & Schemas",
+							"description":
+								[
+									"* Created/updated canonical schema and terminology/data dictionary", 
+									"* Contracts/schemas for channel adapters, product adapters, business services, business events, etc.", 
+									"", 
+									"Responsible", 
+									"* Analyst (Primary)", 
+									"", 
+									"Reviewers", 
+									"* Integration Technical Architect", 
+									"* Peer review within the team"
+								]
+						},
+						{
+							"summary": "Endpoints",
+							"description": 
+								[
+									"* Endpoints identified for existing participating systems (i.e. their WSDL, APIs)", 
+									"", 
+									"Responsible", 
+									"* Developer (Primary)", 
+									"", 
+									"Reviewers", 
+									"* Integration Technical Architect", 
+									"* Peer review within the team"
+								]
+						},
+						{
+							"summary": "MDS",
+							"description": 
+								[
+									"* MDS entities and data analysed, identified, documented", 
+									"", 
+									"Responsible", 
+									"* Analyst (Primary)", 
+									"", 
+									"Reviewers", 
+									"* Integration Technical Architect", 
+									"* Peer review within the analyst group"
+								]
+						},
+						{
+							"summary": "Message Definitions",
+							"description": 
+								[
+									"* Define each required message definition (identified in the behaviour specifications)", 
+									"", 
+									"Responsible", 
+									"* Analyst (Primary)", 
+									"", 
+									"Reviewers", 
+									"* Integration Technical Architect", 
+									"* Peer review within the team"
+								]
+						}
+					]
+				},
+				{
+					"summary": "Ready - Documentation",
+					"description": 
+						[
+							"As per http://wiki/Confluence/display/tech/Definitions+of+Project+and+Iteration+Stages", 
+							"", 
+							"Intent", 
+							"* To create a common understanding within the team of the requirements and design of the service in preparation for coding, test case writing, and support activities (construction ready)", 
+							"* To validate the team understanding of the designed integration solution with the external parties involved and provide a final quality gate/opportunity to review and agree on the solution", 
+							"* To ensure that the ICC has received all the pre-requisites from the business", 
+							"* To communicate to other dependent parties what will be constructed and what their responsibility will be for supporting the solution when it is in production", 
+							"", 
+							"Responsible", 
+							"* Tester (Primary)", 
+							"* Developer", 
+							"* Analyst", 
+							"", 
+							"Reviewers", 
+							"* Peer review within the team"
+						],
+					"subtasks": [
+						{
+							"summary": "Behaviour specifications",
+							"description": 
+								[
+									"* Behaviour specifications and scenarios (business rules and positive/negative scenarios) for each component", 
+									"", 
+									"Responsible", 
+									"* Tester (Primary)", 
+									"* Developer", 
+									"* Analyst", 
+									"", 
+									"Reviewers", 
+									"* Peer review within the team"
+								]
+						},
+						{
+							"summary": "Service documentation",
+							"description": 
+								[
+									"* Service documentation", 
+									"* High-level acceptance criteria defined and agreed", 
+									"* Participating system endpoints (i.e. WSDL)", 
+									"* Any dependencies registered (i.e. people, process, technology)", 
+									"* Any other notes to clarify design intention and required outputs", 
+									"", 
+									"Responsible", 
+									"* Tester (Primary)", 
+									"* Developer", 
+									"* Analyst", 
+									"", 
+									"Reviewers", 
+									"* Peer review within the team"
+								]
+						},
+						{
+							"summary": "Review",
+							"description": 
+								[
+									"* Reviewed non-functional concerns with stakeholders (i.e. volumetrics)", 
+									"", 
+									"Responsible", 
+									"* Tester (Primary)", 
+									"* Developer", 
+									"* Analyst", 
+									"", 
+									"Reviewers", 
+									"* Peer review within the team"
+								]
+						},
+						{
+							"summary": "Test Data",
+							"description": 
+								[
+									"* Complete test case creation for both manual and automated integration tests", 
+									"* Create test data and if required test schedule", 
+									"", 
+									"Responsible", 
+									"* Tester (Primary)", 
+									"", 
+									"Reviewers", 
+									"* Lead Tester"
+								]
+						}
+					]
+				},			
+				{
+					"summary": "Done - Service creation",
+					"description": 
+						[
+							"As per http://wiki/Confluence/display/tech/Definitions+of+Project+and+Iteration+Stages", 
+							"", 
+							"Intent", 
+							"* To create untested working software satisfying the acceptance criteria that can be automatically deployed into the DEV environment", 
+							"* To be able to deploy software into ST and SIT environments", 
+							"* To create a suite of unit and automated integration tests that successfully run during the build process", 
+							"* To document the as built details for future maintainability", 
+							"", 
+							"Responsible", 
+							"* Developer (Primary)", 
+							"", 
+							"Reviewers", 
+							"* Peer reviewed within the team", 
+							"* External up or downstream users", 
+							"* Integration Technical Architect"
+						],
+					"subtasks": [
+						{
+							"summary": "Internal schemas",
+							"description": 
+								[
+									"* If required", 
+									"", 
+									"Responsible", 
+									"* Developer (Primary)", 
+									"", 
+									"Reviewers", 
+									"* Peer reviewed within the team"
+								]
+						},
+						{
+							"summary": "Service stub",
+							"description": 
+								[
+									"* If required create a service stub that can be used by calling parties to begin to validate contracts.", 
+									"", 
+									"Responsible", 
+									"* Developer (Primary)", 
+									"", 
+									"Reviewers", 
+									"* Tester", 
+									"* Peer reviewed within the team"
+								]
+						},
+						{
+							"summary": "Utilities/helper classes",
+							"description": 
+								[
+									"* Any common classes that need to be imported", 
+									"* IIS specific files", 
+									"", 
+									"Responsible", 
+									"* Developer (Primary)", 
+									"", 
+									"Reviewers", 
+									"* Lead Developer"
+								]
+						},
+						{
+							"summary": "MDS entities configured",
+							"description": 
+								[
+									"* POCO classes", 
+									"", 
+									"Responsible", 
+									"* Developer (Primary)", 
+									"", 
+									"Reviewers", 
+									"* Lead Developer"
+								]
+						}
+					]
+				},
+				{
+					"summary": "Done - Error Handling",
+					"description": 
+						[
+							"As per http://wiki/Confluence/display/tech/Definitions+of+Project+and+Iteration+Stages", 
+							"", 
+							"Intent", 
+							"* To create untested working software satisfying the acceptance criteria that can be automatically deployed into the DEV environment", 
+							"* To be able to deploy software into ST and SIT environments", 
+							"* To create a suite of unit and automated integration tests that successfully run during the build process", 
+							"* To document the as built details for future maintainability", 
+							"", 
+							"Responsible", 
+							"* Developer (Primary)", 
+							"* Analyst", 
+							"", 
+							"Reviewers", 
+							"* Integration Technical Architect"
+						],
+					"subtasks": [
+						{
+							"summary": "Error handling & instrumentation",
+							"description": 
+								[
+									"* InstrumentationFireScope configured with email alert rules", 
+									"* Ensure that errors are handled correctly", 
+									"* Ensure that error message definitions are recorded", 
+									"", 
+									"Responsible", 
+									"* Developer (Primary)", 
+									"", 
+									"Reviewers", 
+									"* Integration Technical Architect"
+								]
+						},
+						{
+							"summary": "Support Configuration",
+							"description": 
+								[
+									"* Configure appropriate tracking for some BizTalk artefacts for Production Support", 
+									"* Logging", 
+									"* BizTalk360 configured with monitoring of artefacts for any new applications, orchestrations, or ports", 
+									"", 
+									"Responsible", 
+									"* Developer (Primary)", 
+									"", 
+									"Reviewers", 
+									"* Integration Technical Architect", 
+									"* Tester", 
+									"* Support Team"
+								]
+						}
+					]
+				},
+				{
+					"summary": "Done - Documentation",
+					"description": 
+						[
+							"As per http://wiki/Confluence/display/tech/Definitions+of+Project+and+Iteration+Stages", 
+							"", 
+							"Intent", 
+							"* To create untested working software satisfying the acceptance criteria that can be automatically deployed into the DEV environment", 
+							"* To be able to deploy software into ST and SIT environments", 
+							"* To create a suite of unit and automated integration tests that successfully run during the build process", 
+							"* To document the as built details for future maintainability", 
+							"", 
+							"Responsible", 
+							"* Developer (Primary)", 
+							"", 
+							"Reviewers", 
+							"* Analyst"
+						],
+					"subtasks": [
+						{
+							"summary": "Interface documentation",
+							"description": 
+								[
+									"* e.g. XML, WSDL, API", 
+									"* Any additional Interface usage documentation based on defined requirements", 
+									"", 
+									"Responsible", 
+									"* Developer (Primary)", 
+									"", 
+									"Reviewers", 
+									"* Analyst"
+								]
+						},
+						{
+							"summary": "Wiki  Updates",
+							"description": 
+								[
+									"* Integration services registry/repository updated", 
+									"* Any other reasonable as built documentation complete", 
+									"", 
+									"Responsible", 
+									"* Developer (Primary)", 
+									"", 
+									"Reviewers", 
+									"* Integration Technical Architect", 
+									"* Analyst"
+								]
+						}
+					]
+				},
+				{
+					"summary": "Done - Test",
+					"description": 
+						[
+							"As per http://wiki/Confluence/display/tech/Definitions+of+Project+and+Iteration+Stages", 
+							"", 
+							"Intent", 
+							"* To create untested working software satisfying the acceptance criteria that can be automatically deployed into the DEV environment", 
+							"* To be able to deploy software into ST and SIT environments", 
+							"* To create a suite of unit and automated integration tests that successfully run during the build process", 
+							"* To document the as built details for future maintainability", 
+							"", 
+							"Responsible", 
+							"* Developer (Primary)", 
+							"", 
+							"Reviewers", 
+							"* Build system validated (Dashboard)"
+						],
+					"subtasks": [
+						{
+							"summary": "Acceptance criteria tests",
+							"description": 
+								[
+									"* Acceptance criteria tests / unit testsAutomated tests passing", 
+									"* Can be run as part of the build", 
+									"* All acceptance criteria satisfied (i.e. expected outputs produced)", 
+									"* Automated integration tests / automated end to end tests (optional)", 
+									"* Based on behaviours", 
+									"* Creation of SoapUI stubs and/or mocked endpoints", 
+									"* No outstanding critical, major or blocking defects", 
+									"* Smoke tested", 
+									"", 
+									"Responsible", 
+									"* Developer (Primary)", 
+									"", 
+									"Reviewers", 
+									"* Analyst", 
+									"* Tester"
+								]
+						}
+					]
+				},
+				{
+					"summary": "Done - Deployment",
+					"description": 
+						[
+							"As per http://wiki/Confluence/display/tech/Definitions+of+Project+and+Iteration+Stages", 
+							"",
+							"Intent",
+							"* To create untested working software satisfying the acceptance criteria that can be automatically deployed into the DEV environment", 
+							"* To be able to deploy software into ST and SIT environments", 
+							"* To create a suite of unit and automated integration tests that successfully run during the build process", 
+							"* To document the as built details for future maintainability", 
+							"", 
+							"Responsible", 
+							"* Developer (Primary)", 
+							"", 
+							"Reviewers", 
+							"* Analyst"
+						],
+					"subtasks": [
+						{
+							"summary": "Automated deployment",
+							"description": 
+								[
+									"* Automated deployment/installation scripts within Octopus Deploy", 
+									"* Packaging and deployment", 
+									"* Deployed to the accepted environment", 
+									"* Creating and testing of deployment artefacts", 
+									"* If BizTalk includes BTDF & binding files", 
+									"* Technical verification and service enablement", 
+									"* Ability to be progressed to DEV/ST/SIT easily (Octopus Deploy, scripts, installer, etc.)", 
+									"", 
+									"Responsible", 
+									"* Developer (Primary)", 
+									"", 
+									"Reviewers", 
+									"* Dev ops", 
+									"* Deployment system validated (Dashboard)"
+								]
+						}
+					]
+				},
+				{
+					"summary": "Done/Done - Deployment",
+					"description": 
+						[
+							"As per http://wiki/Confluence/display/tech/Definitions+of+Project+and+Iteration+Stages", 
+							"", 
+							"Intent", 
+							"* To validate the working integration component (including scenarios and behaviours) and easy deployment to the ST environment", 
+							"* To validate service interface documents and captured as built details including operational support documentation (e.g. BAM, BCP) and business service and events registry", 
+							"* To ensure that all non-functional acceptance criteria are satisfied (i.e. performance, scalability) and that the results of scenarios and behaviours are validated by business users", 
+							"* To ensure that no outstanding critical or major defects exist", 
+							"* To validate software can be deployed to SIT environment", 
+							"", 
+							"Responsible", 
+							"* Tester (Primary)", 
+							"* Developer", 
+							"", 
+							"Reviewers", 
+							"* Dev Ops"
+						],
+					"subtasks": [
+						{
+							"summary": "Deploy to ST Environment",
+							"description": 
+								[
+									"* Review Octopus variables", 
+									"", 
+									"Responsible", 
+									"* Tester (Primary)", 
+									"* Developer", 
+									"", 
+									"Reviewers", 
+									"* Dev Ops"
+								]
+						},
+						{
+							"summary": "Deploy to SIT Environment",
+							"description": 
+								[
+									"* Review Octopus variables", 
+									"", 
+									"Responsible", 
+									"* Tester (Primary)", 
+									"* Developer", 
+									"", 
+									"Reviewers", 
+									"* Dev Ops"
+								]
+						}
+					]
+				},
+				{
+					"summary": "Done/Done - Documentation",
+					"description": 
+						[
+							"As per http://wiki/Confluence/display/tech/Definitions+of+Project+and+Iteration+Stages", 
+							"", 
+							"Intent", 
+							"* To validate the working integration component (including scenarios and behaviours) and easy deployment to the ST environment", 
+							"* To validate service interface documents and captured as built details including operational support documentation (e.g. BAM, BCP) and business service and events registry", 
+							"* To ensure that all non-functional acceptance criteria are satisfied (i.e. performance, scalability) and that the results of scenarios and behaviours are validated by business users", 
+							"* To ensure that no outstanding critical or major defects exist", 
+							"* To validate software can be deployed to SIT environment", 
+							"", 
+							"Responsible", 
+							"* Tester (Primary)", 
+							"", 
+							"Reviewers", 
+							"* Lead Tester", 
+							"* Iteration Manager"
+						],
+					"subtasks": [
+						{
+							"summary": "Store test results in project folder",
+							"description": 
+								[
+									"* Review SpecFlow results in TeamCity", 
+									"", 
+									"Responsible", 
+									"* Tester (Primary)", 
+									"* Developer", 
+									"", 
+									"Reviewers", 
+									"* Lead Tester", 
+									"* Iteration Manager"
+								]
+						},
+						{
+							"summary": "Documentation",
+							"description": 
+								[
+									"* Ensure wiki is up-to-date", 
+									"", 
+									"Responsible", 
+									"* Tester (Primary)", 
+									"* Analyst", 
+									"", 
+									"Reviewers", 
+									"* Lead Tester", 
+									"* Iteration Manager"
+								]
+						}
+					]
+				},
+				{
+					"summary": "Done/Done - Test Execution",
+					"description": 
+						[
+							"As per http://wiki/Confluence/display/tech/Definitions+of+Project+and+Iteration+Stages", 
+							"", 
+							"Intent", 
+							"* To validate the working integration component (including scenarios and behaviours) and easy deployment to the ST environment", 
+							"* To validate service interface documents and captured as built details including operational support documentation (e.g. BAM, BCP) and business service and events registry", 
+							"* To ensure that all non-functional acceptance criteria are satisfied (i.e. performance, scalability) and that the results of scenarios and behaviours are validated by business users", 
+							"* To ensure that no outstanding critical or major defects exist", 
+							"* To validate software can be deployed to SIT environment", 
+							"", 
+							"Responsible", 
+							"* Tester (Primary)", 
+							"", 
+							"Reviewers", 
+							"* Lead Tester", 
+							"* Peer review within the team"
+						],
+					"subtasks": [
+						{
+							"summary": "Black-box testing",
+							"description": 
+								[
+									"* Test cases documented", 
+									"", 
+									"Responsible", 
+									"* Tester (Primary)", 
+									"", 
+									"Reviewers", 
+									"* Lead Tester", 
+									"* Integration Technical Architect"
+								]
+						},
+						{
+							"summary": "Integration, Exploratory and Regression testing using tools (SoapUI)",
+							"description": 
+								[
+									"* Test cases loaded into TFS", 
+									"", 
+									"Responsible", 
+									"* Tester (Primary)", 
+									"", 
+									"Reviewers", 
+									"* Lead Tester"
+								]
+						},
+						{
+							"summary": "End to end testing",
+							"description": 
+								[
+									"* Taking into account the system as a whole", 
+									"", 
+									"Responsible", 
+									"* Tester (Primary)", 
+									"", 
+									"Reviewers", 
+									"* Lead Tester", 
+									"* Integration Technical Architect"
+								]
+						}
+					]
+				}
+			]
+		}
+	}
+}

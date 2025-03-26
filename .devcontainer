@@ -1,0 +1,9 @@
+ {
+    "name": "My .NET 9 Codespace",
+    "image": "mcr.microsoft.com/devcontainers/dotnet:9.0-latest",
+    "features": {
+    "ghcr.io/devcontainers/features/dotnet-sdk:1": {
+        "version": "9.0.100"
+    }
+    }
+}
